@@ -1,0 +1,25 @@
+name: 🐛 버그 리포트
+description: 버그를 발견했을 때 사용합니다
+labels: ["bug"]
+body:
+  - type: textarea
+    id: current
+    attributes:
+      label: 현재 상황
+      description: 현재 어떤 문제가 발생하고 있나요?
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: 기대 상황
+      description: 정상적인 경우 어떻게 동작해야 하나요?
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: 재현 방법
+      description: 버그를 재현하는 단계를 알려주세요
+    validations:
+      required: true
